@@ -38,7 +38,7 @@ const NavContainer=styled.nav`
         font-weight: 400;
     }
     padding:.4rem;
-    background-color: green;
+    background-color: rgb(51 105 30);
     display: flex;
     align-items: center;
     justify-content: space-between;
