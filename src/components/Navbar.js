@@ -1,6 +1,8 @@
 import React,{useState} from "react";
 import styled from "styled-components";
 import BurguerButton from "./BurguerButton";
+import Inicio from "../pages/Inicio.js";
+
 
 function Navbar(){
 
@@ -14,10 +16,10 @@ function Navbar(){
         <NavContainer>
             <h1>Navbar</h1>
         <div className={`links ${clicked?"active":""}`}>
-            <a onClick={handleClick} href="/">Inicio</a>
-            <a onClick={handleClick} href="/">Foro de apoyo</a>
-            <a onClick={handleClick} href="/">Eventos</a>
-            <a onClick={handleClick} href="/">Entretenimiento</a>
+            <a onClick={handleClick} href="/Inicio" element={<Inicio/>} >Inicio</a>
+            <a onClick={handleClick} href="/ForoApoyo">Foro de apoyo</a>
+            <a onClick={handleClick} href="/Eventos">Eventos</a>
+            <a onClick={handleClick} href="/Entretenimiento">Entretenimiento</a>
         </div>
         <div className="burguer">
             <BurguerButton clicked={clicked} handleClick={handleClick}></BurguerButton>
@@ -36,7 +38,7 @@ const NavContainer=styled.nav`
         font-weight: 400;
     }
     padding:.4rem;
-    background-color: #333;
+    background-color: green;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -96,7 +98,7 @@ const NavContainer=styled.nav`
 ` 
 
 const BgDiv=styled.div`
-    background-color: black;
+    background-color: green;
     position: absolute;
     top: -700px;
     left: -1000px;
