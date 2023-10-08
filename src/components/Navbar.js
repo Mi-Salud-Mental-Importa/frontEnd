@@ -14,12 +14,13 @@ function Navbar(){
     return(
         <>
         <NavContainer>
-            <h1>Navbar</h1>
+            <h1></h1>
         <div className={`links ${clicked?"active":""}`}>
-            <a onClick={handleClick} href="/Inicio" element={<Inicio/>} >Inicio</a>
-            <a onClick={handleClick} href="/ForoApoyo">Foro de apoyo</a>
-            <a onClick={handleClick} href="/Eventos">Eventos</a>
-            <a onClick={handleClick} href="/Entretenimiento">Entretenimiento</a>
+            <a onClick={handleClick} href="/Inicio" >Inicio</a>
+            <a onClick={handleClick} href="/ForoApoyo">ManoAmiga</a>
+            <a onClick={handleClick} href="/Eventos">Parchemos</a>
+            <a onClick={handleClick} href="/Entretenimiento">Entrétenete</a>
+            <a onClick={handleClick} href="/Entretenimiento" style={{ color: 'red',fontWeight: 'bold' }}>EMERGENCIA</a>
         </div>
         <div className="burguer">
             <BurguerButton clicked={clicked} handleClick={handleClick}></BurguerButton>
@@ -33,16 +34,18 @@ function Navbar(){
 export default Navbar
 
 const NavContainer=styled.nav` 
+
     h1{
         color: white;
         font-weight: 400;
     }
-    padding:.4rem;
+    padding:1.5rem 0rem 1.4rem 2rem;
     background-color: rgb(51 105 30);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex;
     a{
+        
         color:white;
         text-decoration: none;
         margin-right: 1rem;
@@ -52,8 +55,24 @@ const NavContainer=styled.nav`
             display: none;
         }
     }
+    .links a:hover {
+        color: #008000; /* Cambia este valor al color verde oscuro que desees */
+        background-color: #d0ffd0; /* Cambia el fondo al verde claro cuando se pasa el cursor */
+      }
+      .links a {
+        color: white; /* Color de texto predeterminado */
+        text-decoration: none; /* Quitar subrayado predeterminado */
+        padding: 10px 10px; /* Ajustar el espacio alrededor del texto según sea necesario */
+        border-radius: 10px; /* Borde redondeado */
+        transition: color 0.3s, background-color 0.3s; /* Transición suave */
+      }
+      
     .links{
         position: absolute;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        text-align: center;
         top:-700px;
         left: -2000px;
         right: 0;
@@ -65,14 +84,15 @@ const NavContainer=styled.nav`
             color:black;
             font-size: 2rem;
             display: block;    
+            margin-left: 5rem;
+            margin-right: 4rem;
         }
         @media(min-width: 768px){
             position: initial;
             margin:0;
             a{
-                font-size: 1rem;
+                font-size: 1.3rem;
                 color:white;
-                display: inline;
             }
         }
     }
@@ -88,7 +108,8 @@ const NavContainer=styled.nav`
         right: 0;
         text-align: center;
         a{
-            font-size: 2rem;
+            
+            font-size: 1.7rem;
             margin-top: 1rem;
             color:white;
         }
