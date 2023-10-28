@@ -7,16 +7,20 @@ import Inicio from './pages/Inicio.js';
 import ForoApoyo from './pages/ForoApoyo.js';
 import Eventos from './pages/Eventos.js';
 import Entretenimiento from './pages/Entretenimiento.js';
+import Emergencia from './pages/Emergencia.js';
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Inicio/>}></Route>
           <Route path="/Inicio" element={<Inicio/>}></Route>
           <Route path="/ForoApoyo" element={<ForoApoyo/>}></Route>
           <Route path="/Eventos" element={<Eventos/>}></Route>
           <Route path="/Entretenimiento" element={<Entretenimiento/>}></Route>
+          <Route path="/Emergencia" element={<Emergencia/>}></Route>
+
         </Routes>
       </BrowserRouter>
     </div>
