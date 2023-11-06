@@ -19,7 +19,7 @@ function Navbar(){
             <a onClick={handleClick} href="/Inicio" >Inicio</a>
             <a onClick={handleClick} href="/ForoApoyo">ManoAmiga</a>
             <a onClick={handleClick} href="/Eventos">Parchemos</a>
-            <a onClick={handleClick} href="/Entretenimiento">Entrétenete</a>
+            <a onClick={handleClick} href="/Historias">Historias</a>
             <a onClick={handleClick} href="/Emergencia" style={{ color: 'red',fontWeight: 'bold' }}>EMERGENCIA</a>
         </div>
         <div className="burguer">

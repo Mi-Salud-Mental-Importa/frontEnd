@@ -1,0 +1,10 @@
+/* Estilos para las flechas del carrusel */
+.custom-carousel .carousel .control-arrow {
+    background-color: rgba(0, 0, 0, 0.5); /* Cambiar el color de fondo de las flechas */
+    font-size: 24px; /* Tamaño de fuente de las flechas */
+}
+
+/* Estilos para separar las imágenes del footer */
+.Footer {
+    margin-top: 20px; /* Ajustar el margen superior del footer */
+}

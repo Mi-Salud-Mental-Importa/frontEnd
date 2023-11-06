@@ -6,8 +6,10 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Inicio from './pages/Inicio.js';
 import ForoApoyo from './pages/ForoApoyo.js';
 import Eventos from './pages/Eventos.js';
-import Entretenimiento from './pages/Entretenimiento.js';
+import Historias from './pages/Historias.js';
 import Emergencia from './pages/Emergencia.js';
+import { ToastContainer } from 'react-toastify';
+import PostPage from './pages/PostPage';
 
 function App() {
   return (
@@ -18,11 +20,12 @@ function App() {
           <Route path="/Inicio" element={<Inicio/>}></Route>
           <Route path="/ForoApoyo" element={<ForoApoyo/>}></Route>
           <Route path="/Eventos" element={<Eventos/>}></Route>
-          <Route path="/Entretenimiento" element={<Entretenimiento/>}></Route>
+          <Route path="/Historias" element={<Historias/>}></Route>
+          <Route path="/posts/:postId" element={<PostPage/>}></Route>
           <Route path="/Emergencia" element={<Emergencia/>}></Route>
-
         </Routes>
       </BrowserRouter>
+      <ToastContainer/>
     </div>
   );
 }
