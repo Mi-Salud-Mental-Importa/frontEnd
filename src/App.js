@@ -10,6 +10,8 @@ import Historias from './pages/Historias.js';
 import Emergencia from './pages/Emergencia.js';
 import { ToastContainer } from 'react-toastify';
 import PostPage from './pages/PostPage';
+import UpdatePost from './pages/UpdatePost';
+
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
           <Route path="/Historias" element={<Historias/>}></Route>
           <Route path="/posts/:postId" element={<PostPage/>}></Route>
           <Route path="/Emergencia" element={<Emergencia/>}></Route>
+          <Route path="/updatePost/:postId" element={<UpdatePost/>}></Route>
         </Routes>
       </BrowserRouter>
       <ToastContainer/>

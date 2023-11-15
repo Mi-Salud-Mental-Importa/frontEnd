@@ -39,7 +39,6 @@ const submitComment=()=>{
         loadPost(postId)
             .then(data => {
                 setPost(data);
-                console.log(data)
                 window.scrollTo(0, 0);
             })
             .catch(error => {

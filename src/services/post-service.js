@@ -19,3 +19,13 @@ export const loadPost=(postId)=>{
 export const createComment=(comment,postId)=>{
     return myAxios.post(`/post/${postId}/comments`,comment)
 };
+
+//delete a post
+export const deletePost=(postId)=>{
+    return myAxios.delete(`/posts/${postId}`).then((response)=>response.data)
+}
+
+//update a post
+export const updatePost=(post,postId)=>{
+    return myAxios.put(`/posts/${postId}`,post).then((response)=>response.data)
+}
