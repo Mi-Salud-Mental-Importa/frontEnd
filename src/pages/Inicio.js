@@ -73,18 +73,6 @@ function Inicio() {
                         </Link>
                     </Feature>
                     <Feature>
-                        <h2>Eventos</h2>
-                        <p>Mira los eventos que ofrece la U para tu desarrollo personal.</p>
-                        <Link to="/Eventos">
-                         <button>Eventos</button>
-                        </Link>
-                        <p>
-
-                        </p>
-                        <img src={descenventos} alt=""
-                        width={500} height={500}/>
-                    </Feature>
-                    <Feature>
                         <h2>Entretenimiento</h2>
                         <p>Accede a recursos útiles para distraerte en momentos difíciles y mejorar tu bienestar emocional.</p>
                         <Link to="/Entretenimiento">
