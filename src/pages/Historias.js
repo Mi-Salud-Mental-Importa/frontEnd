@@ -6,8 +6,6 @@ import Historia from "../components/Historia";
 import {Container} from 'reactstrap';
 
 function Historias() {
-
-
     return(
         <>
             <Navbar></Navbar>
